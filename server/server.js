@@ -47,6 +47,6 @@ app.put('/usuarios/:id', function (req, res) {
     res.json('get Usuarios')
   })  
 
-app.listen(3000,()=>{
- console.log('Listening on port 3000');
+app.listen(process.env.PORT,()=>{
+ console.log(`Listening on port ${process.env.PORT}`);
 })
